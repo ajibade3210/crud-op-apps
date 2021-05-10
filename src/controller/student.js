@@ -23,11 +23,11 @@ const createStudent = async(req, res) => {
         // res.send(result);
         res.json({
             result: result,
-            status: 400,
+            status: 200,
             message: 'User Created',
         })
     } catch(error) {
-        res.status(500).send('Email Has To Be Unique: Two accounts cannot have the same email address');
+        res.status(500).send('Two accounts cannot have the same email address');
         console.log(error)
     }
 }
@@ -38,7 +38,7 @@ const getStudent =  async (req, res) => {
         const student = await StudentModel.findById(req.params.id);
         res.json({
             result: student,
-            status: 400,
+            status: 200,
             message: 'Student Data',
         })
     } catch(error) {
@@ -46,19 +46,21 @@ const getStudent =  async (req, res) => {
     }
 }
 
+
+
 //Update Operation
 const updateStudent = async(req, res) => {
     try{
-        const student = await StudentModel.findById(req.params.id).exec();
+        const student = await StudentModel.findByIdAndUpdate(req.params.id).exec();
         student.set(req.body);
         const result = await student.save();
         res.json({
             result: result,
-            status: 400,
-            message: 'Student Data Updated Successfully',
+            status: 200,
+            message: 'Student Data Updated Successfully'
         })
     } catch(error){
-        res.status(500).send('Incorrect Student Id ');
+        res.status(500).send('Change Student Email');
     }
 }
 
