@@ -4,8 +4,8 @@
   "description": "Create a CRUD operation App creating simple data having a schema of name,  email and country details.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+   "start": "node app.js",
+   "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
