@@ -12,6 +12,10 @@ This application was developed to enable students
  ## Acknowledgement
  [Zuri Team](https://twitter.com/theZuriTeam?s=20)
  - Zuri Task 3.0
+
+ ### Check The App Out 
+- Hosted on Heroku  [CRUD-OP-APPS](https://crud-op-apps.herokuapp.com/)
+- Heroku Link -https://crud-op-apps.herokuapp.com/
   
 
 ## Tech Stack
@@ -73,3 +77,7 @@ A Server Application (Backend)
 ### Data Entry Requirement 
 - Firstname and Lastname is Required
 - Email has to be Unique
+
+### Check The App Out 
+- Hosted on Heroku  [CRUD-OP-APPS](https://crud-op-apps.herokuapp.com/)
+- Heroku Link -https://crud-op-apps.herokuapp.com/
