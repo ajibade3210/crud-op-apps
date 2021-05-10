@@ -2,7 +2,7 @@ const {StudentModel} = require('../../model/studentSchema');
 
 //Home Endpoint
  const getHomePage = async(req, res) =>{
-    res.send('Welcome To Zuri Student Register: Register Your Student Login by Filling Your firstName, lastname, email and country')
+    res.send('Welcome To Zuri Student Register: Register Your Student Login by Filling Your firstName, lastname, email and country. Run On Postman')
  }
 
 //read Operation
