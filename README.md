@@ -1,4 +1,4 @@
-# Simple CRUD-OPS Application
+# CRUD-OPS Application
 
 This application was developed to enable students
  to register their information via API. 
